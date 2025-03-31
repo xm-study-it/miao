@@ -415,14 +415,16 @@
     }
 </script>
 
-<script type="xxx" id="ch0104/21">
+<script  id="ch0104/21">
     var apple = +prompt()
     var time1 = +prompt()
     var time2 = +prompt()
     if (time2 / time1 % 1 !== 0) {
         apple = apple - Math.ceil(time2 / time1)
         console.log(apple)
-    } else if (time2 / time1 % 1 == 0)
+    } else {
         apple = apple - time2 / time1
         console.log(apple)
+    }
+        
 </script>
