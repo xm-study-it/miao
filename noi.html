@@ -171,3 +171,253 @@
     console.log(2 ** n);
     
 </script>
+
+<script type="xxx" id="ch0104/01">
+    var n = +prompt("n:")
+    if (n > 0) {
+        console.log("positive")
+    } else if (n == 0) {
+        console.log("zero");
+    } else {
+        console.log("negative");
+    }
+
+</script>
+
+<script type="xxx" id="ch0104/02">
+    var n = +prompt("n")
+    if (n >= 0)
+        console.log(n.toFixed(2))
+    else
+        console.log((-n).toFixed(2))
+</script>
+
+<script type="xxx" id="ch0104/03">
+    var n = +prompt("n")
+    if (n % 2 == 0)
+        console.log("even")
+    else
+        console.log("odd")
+</script>
+
+<script type="xxx" id="ch0104/04">
+    var n = prompt()
+    n = n.charCodeAt(0)
+    if (n % 2 ==0) {
+        console.log("YES");
+    } else {
+        console.log("NO");
+    }
+</script>
+
+<script type="xxx" id="ch0104/05">
+    var x = +prompt()
+    var y = +prompt()
+    if (x > y) {
+        console.log(">");
+    } else if (x < y) {
+        console.log("<");
+    } else {
+        console.log("=");
+    }
+</script>
+
+<script type="xxx" id="ch0104/06">
+    var n = +prompt()
+    if (n < 100 && n >=10)
+        console.log(1)
+    else
+        console.log(0)
+</script>
+
+<script type="xxx" id="ch0104/07">
+    var x = +prompt()
+    var y = +prompt()
+    if (x >= 10 || y >= 20) {
+        console.log(1);
+    } else
+        console.log(0)
+</script>
+
+<script type="xxx" id="ch0104/08">
+    var n = +prompt()
+    if (n % 3 == 0 && n % 5 == 0)
+        console.log("YES");
+    else
+        console.log("NO");
+</script>
+
+<script type="xxx" id="ch0104/09">
+    var n = +prompt()
+    if (n % 3 == 0 && n % 5 == 0 && n % 7 == 0){
+        console.log("3 " + "5 " + "7");
+    } else if (n % 3 == 0 && n % 5 == 0) {
+        console.log("3 " + "5")
+    } else if (n % 3 == 0 && n % 7 == 0) {
+        console.log("3 " + "7")
+    } else if (n % 5 == 0 && n % 7 == 0) {
+        console.log("5 " + "7")
+    } else if (n % 5 == 0 ) {
+        console.log("5")
+    } else if (n % 7 == 0 ) {
+        console.log("7")
+    } else if (n % 3 == 0 ) {
+        console.log("3")
+    } else {
+        console.log("n");
+    }     
+</script>
+
+<script type="xxx" id="ch0104/10">
+    var Chinese = +prompt()
+    var Math = +prompt()
+    if (Chinese < 60 && Math >= 60|| Math <60 && Chinese >= 60)
+        console.log(1);
+    else
+        console.log(0);
+</script>
+
+<script type="xxx" id="ch0104/11">
+    var day = +prompt()
+    if (day !== 1 || day !== 3 || day !== 5)
+        console.log("YES");
+    else
+        console.log("NO");
+</script>
+
+<script type="xxx" id="ch0104/12">
+    var distance = +prompt()
+    var time_bike
+    var time_walk
+    time_bike = 50 + distance / 3
+    time_walk = distance / 1.2
+    if (time_bike < time_walk) {
+        console.log("Bike");
+    } else if (time_bike > time_walk) {
+        console.log("Walk")
+    } else
+        console.log("All")
+</script>
+
+<script type="xxx" id="ch0104/13">
+    var x = +prompt()
+    var y 
+    if (x >= 0 && x < 5) {
+        y = -x + 2.5
+    } else if (x >= 5 && x < 10) {
+        y = 2 - 1.5 * (x - 3) * (x - 3)
+    } else
+        y = x / 2 - 1.5
+    console.log(y.toFixed(3));
+</script>
+
+<script type="xxx" id="ch0104/14">
+    var weight = +prompt()
+    var way = prompt()
+    var price
+    var over = ((weight - 1000) / 500)
+    if (over > 0)
+        over = Math.ceil(over)
+    if (weight >1000)
+        if (way == "y") {
+            price = 4 * over + 5 + 8
+        } else if (way == "n")
+            price = 4 * over + 8
+    else if(way == "y")
+            price = 13
+        else
+            price = 8
+    console.log(price);
+</script>
+
+<script type="xxx" id="ch0104/15">
+    var a = +prompt()
+    var b = +prompt()
+    var c = +prompt()
+    if (a >= b && a >= c) {
+        console.log(a);
+    } else if (b >= a && b >= c) {
+        console.log(b)
+    }  else if(c >= a && c >= b) {
+        console.log(c)
+    }
+</script>
+
+<script type="xxx" id="ch0104/16">
+    var a = +prompt()
+    var b = +prompt()
+    var c = +prompt()
+    if (b < a + c && a < b + c && c < a + b && ) {
+        console.log("yes")
+    } else  {
+        console.log("no")
+    } 
+</script>
+
+<script type="xxx" id="ch0104/17">
+    var y = +prompt()
+    if (y % 4 == 0 && y % 400 == 0) {
+        console.log("Y")
+    } else
+        console.log("N")
+</script>
+
+<script type="xxx" id="ch0104/18">
+    var x = +prompt()
+    var y = +prompt()
+    if (x >= -1 && x <= 1 && y >= -1 && y <= 1)
+        console.log("yes")
+    else
+        console.log("no")
+</script>
+
+<script type="xxx" id="ch0104/19">
+    var a = +prompt()
+    var b = +prompt()
+    var c = prompt()
+    if (c == "+") {
+        console.log(a + b)
+    } else if (c == "-") {
+        console.log(a - b)
+    } else if (c == "*") {
+        console.log(a * b)
+    } else if (c == "/") {
+        console.log(a / b)
+    }
+</script>
+
+<script type="xxx" id="ch0104/20">
+    var a = +prompt()
+    var b = +prompt()
+    var c = +prompt()
+    var x1
+    var x2
+    var delta = b * b - 4 * a * c
+    var r_part
+    var i_part
+    if (delta == 0) {
+        x1 = (-b + delta ** 0.5) / (2 * a)
+        x2 = (-b - delta ** 0.5) / (2 * a)
+        console.log("x1=x2=" + x2.toFixed(5))
+    } else if (delta > 0) {
+        x1 = (-b + delta ** 0.5) / 2 * a
+        x2 = (-b - delta ** 0.5) / 2 * a
+        console.log("x1=" + x1.toFixed(5) + ";" + "x2=" + x2.toFixed(5))
+    } else if (delta < 0) {
+        r_part = -b / 2 * a
+        i_part2 = Math.sqrt(-delta) / 2 * a
+        console.log("x1=" + "" + r_part.toFixed(5) + "+" + i_part.toFixed(5) + "i" + ";" + "x2=" + "" + r_part.toFixed(5) + "-" + i_part.toFixed(5) + "i")
+    }
+</script>
+
+<script type="xxx" id="ch0104/21">
+    var apple = +prompt()
+    var time1 = +prompt()
+    var time2 = +prompt()
+    if (time2 / time1 % 1 !== 0) {
+        apple = apple - Math.ceil(time2 / time1)
+        console.log(apple)
+    } else
+        apple = apple - time2 / time1
+        console.log(apple)
+</script>
