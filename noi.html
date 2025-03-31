@@ -204,9 +204,9 @@
     var n = prompt()
     n = n.charCodeAt(0)
     if (n % 2 ==0) {
-        console.log("YES");
-    } else {
         console.log("NO");
+    } else {
+        console.log("YES");
     }
 </script>
 
@@ -347,9 +347,9 @@
     var a = +prompt()
     var b = +prompt()
     var c = +prompt()
-    if (b < a + c && a < b + c && c < a + b && ) {
+    if (b < a + c && a < b + c && c < a + b) {
         console.log("yes")
-    } else  {
+    } else {
         console.log("no")
     } 
 </script>
@@ -375,6 +375,7 @@
     var a = +prompt()
     var b = +prompt()
     var c = prompt()
+    
     if (c == "+") {
         console.log(a + b)
     } else if (c == "-") {
@@ -383,6 +384,10 @@
         console.log(a * b)
     } else if (c == "/") {
         console.log(a / b)
+    } else if (a == 0 && b ==0) {
+        console.log("Divided by zero!")
+    } else {
+        console.log("Invalid operator!")
     }
 </script>
 
@@ -417,7 +422,7 @@
     if (time2 / time1 % 1 !== 0) {
         apple = apple - Math.ceil(time2 / time1)
         console.log(apple)
-    } else
+    } else if (time2 / time1 % 1 == 0)
         apple = apple - time2 / time1
         console.log(apple)
 </script>
