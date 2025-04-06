@@ -415,7 +415,7 @@
     }
 </script>
 
-<script  id="ch0104/21">
+<script type="xxx"id="ch0104/21">
     var apple = +prompt()
     var time1 = +prompt()
     var time2 = +prompt()
@@ -427,4 +427,341 @@
         console.log(apple)
     }
         
+</script>
+
+<script type="xxx" id="ch0105/01">
+    var n = +prompt()
+    var sum = 0
+    for(var i = 0; i < n; i++) {
+        var a = +prompt()
+        sum = sum + a
+    }
+    console.log((sum / n).toFixed(2))
+</script>
+
+<script type="xxx" id="ch0105/02">
+    var sum = 0
+    for (var i = 0; i < 12; i++) {
+        var a = +prompt()
+        sum = sum + a
+    }
+    console.log((sum / 12).toFixed(2))
+</script>
+
+<script type="xxx" id="ch0105/03">
+    var n = +prompt()
+    var sum = 0
+    for (var i = 0; i<n; i++) {
+        var a = +prompt()
+        sum = sum + a
+    }
+    console.log((sum / n).toFixed(4))
+</script>
+
+<script type="xxx" id="ch0105/04">
+    var n = +prompt()
+    var sum = 0
+    for (var i = 0; i<n; i++) {
+        var a = +prompt()
+        sum = sum + a
+    }
+    console.log(sum)
+    console.log((sum / 4).toFixed(5))
+</script>
+
+<script type="xxx" id="ch0105/05">
+    var min = Infinity
+    var max = -Infinity
+    var n = +prompt()
+    for (var i = 0; i < n; i++) {
+        var a = +prompt()
+        if (a > max) {
+            max = a
+        } else if (a < min) {
+            min = a
+        }
+    }
+    console.log(max)
+</script>
+
+<script type="xxx" id="ch0105/06">
+    var min = Infinity
+    var max = -Infinity
+    var n = +prompt()
+    for (var i = 0; i < n; i++) {
+        var a = +prompt()
+        if (a > max) {
+            max = a
+        } else if (a < min) {
+            min = a
+        }
+    }
+    console.log(max)
+</script>
+
+<script type="xxx" id="ch0105/07">
+    var n = +prompt()
+    var Au = 0
+    var Ag = 0
+    var Cu = 0
+    for (var i = 0; i < n; i++) {     
+        var a = +prompt()
+        var b = +prompt()
+        var c = +prompt()
+        Au = Au + a
+        Ag = Ag + b
+        Cu = Cu + c
+    }
+    console.log(Au,Ag,Cu,Au + Ag + Cu)
+</script>
+
+<script type="xxx" id="ch0105/08">
+    var n = +prompt()
+    var sum = (n - 2) * 180
+    for (var i = 0; i < n - 1; i++) {
+        var a = +prompt()
+        sum = sum - a
+    }
+    console.log(sum)
+</script>
+
+<script type="xxx" id="ch0105/09">
+    var m = +prompt()
+    var n = +prompt()
+    var sum = 0
+    for (var i = m; i <= n; i++) {
+        if (i % 2 == 1) {
+            sum = sum + i
+        }
+    }
+    console.log(sum)
+</script>
+
+<script type="xxx" id="ch0105/10">
+    var m = +prompt()
+    var n = +prompt()
+    var sum = 0
+    for (var i = m; i <= n; i++) {
+        if (i % 17 == 0) {
+            sum = sum + i
+        }
+    }
+    console.log(sum)
+</script>
+
+<script type="xxx" id="ch0105/11">
+    var k = +prompt()
+    var count_1 = 0
+    var count_5 = 0
+    var count_10 = 0
+    for (var i = 0; i < k; i++) {
+        var a = +prompt()
+        if (a == 1) {
+            count_1++
+        } else if (a == 5) {
+            count_5++
+        } else if (a == 10) {
+            count_10++
+        }
+    }
+    console.log(count_1,count_5,count_10)
+</script>
+
+<script type="xxx" id="ch0105/12">
+    var N = +prompt()
+    var m = +prompt()
+    var count = 0
+    for (var i = 0; i < N; i++) {
+        var a = +prompt()
+        if (a == m) {
+            count++
+        }
+    }
+    console.log(count)
+</script>
+
+<script type="xxx" id="ch0105/13">
+    var a = +prompt()
+    var n = +prompt()
+    var b = a
+    for (var i = 0; i < n - 1; i++) {
+        a = a * b
+    }
+    console.log(a)
+</script>
+
+<script type="xxx" id="ch0105/14">
+    var x = +prompt()
+    var n = +prompt()
+    for (var i = 0; i < n; i++) {
+        x = x * 1.001
+    }
+    console.log(x.toFixed(4))
+</script>
+
+<script type="xxx" id="ch0105/15">
+    var R = +prompt()
+    var M = +prompt()
+    var Y = +prompt()
+    for (var i = 0; i < Y; i++) {
+        M = M * (1 + R / 100)
+    }
+    console.log(M - M % 1)
+</script>
+
+<script type="xxx" id="ch0105/16">
+    var N = +prompt()
+    var K = +prompt()
+    var found = false
+    var price = 200
+    var deposit = 0
+    for (var i = 1; i <= 20; i++) {
+        price = price * Math.pow(1 + K / 100, i - 1)
+        deposit = deposit + N
+        if (deposit >= price) {
+            console.log(i)
+            found = true
+            break
+        }
+    }
+    if (!found) {
+        console.log("Impossible")
+    }
+</script>
+
+<script type="xxx" id="ch0105/17">
+    var k = +prompt()
+    var a0 = 0
+    var a1 = 1
+    for (var i = 1; i < k; i++) {
+        var a = a0 + a1
+        a0 = a1
+        a1 = a
+    }
+    console.log(a)
+</script>
+
+<script type="xxx" id="ch0105/18">
+    var n = +prompt()
+    for (var i = 0; i < n; i++) {
+        var x = +prompt()
+        var y = +prompt()
+        if (y - x > 5) {
+            console.log("better")
+        } else if (x - y > 5) {
+            console.log("worse")
+        } else {
+            console.log("same")
+        }
+    }
+</script>
+
+<script type="xxx" id="ch0105/19">
+    var roof = +prompt()
+    var time = 0
+    for (var i = 0; i < roof; i++) {
+        var x = +prompt()
+        var y = +prompt()
+        var person = +prompt()
+        time = time + Math.pow((Math.pow(x , 2) + Math.pow(y , 2)) , 0.5) / 50 * 2 + person *1.5
+    }
+    console.log(Math.ceil(time))
+</script>
+
+<script type="xxx" id="ch0105/20">
+    var h = +prompt()
+    var distance = 0
+    var hight = 0
+    for (var i = 0; i < 10; i++) {
+        distance = distance + h + hight
+        hight = h / 2
+        h = hight
+    }
+    console.log(distance,hight)
+</script>
+
+<script type="xxx" id="ch0105/21">
+    var N = +prompt()
+    while (N !== 1) {
+        if (N % 2 == 0) {
+            console.log("" + N + "/" + 2 + "=" + N / 2)
+            N = N / 2
+        } else if (N % 2 == 1) {
+            console.log("" + N + "*" + 3 + "+" + 1 + "=" + (N * 3 + 1))
+            N = N * 3 + 1
+        }
+    }
+    console.log("End")
+</script>
+
+<script type="xxx" id="ch0105/22">
+    var balance = 0
+    var count = 0
+    var loss = false
+    var month
+    for (var i = 1; i <= 12; i++) {
+        balance = balance + 300
+        var budget = +prompt("第" + i + "月预算")
+        if (balance < budget) {
+            loss = true
+            month = i
+        }
+        balance = balance - budget
+        if (balance >= 100) {
+            var saved = Math.floor(balance / 100) * 100
+            count = count + saved
+            balance = balance - saved
+        }
+        
+    }
+    count = count * 1.2 + balance
+    if (loss) {
+        console.log(-month)
+    } else {
+        console.log(count)
+    }
+</script>
+
+<script type="xxx" id="ch0105/23">
+    var m = +prompt()
+    var n = +prompt()
+    var count = 0
+    for (var i = 0; i < n; i++) {
+        var num = +prompt()
+        m = m - num
+        if (m < 0) {
+            count++
+            m = m + num
+        }
+    }
+    console.log(count)
+</script>
+
+<script type="xxx" id="ch0105/24">
+    var n = +prompt()
+    var last 
+    var earlist
+    var latest
+    var min = Infinity
+    for (var i = 0; i < n; i++) {
+        var high = +prompt()
+        var low = +prompt()
+        if(90 <= high && high <= 140 && 60 <= low && low <= 90) {
+            earlist = i 
+        } else {
+            latest = i
+            last = latest - earlist + 1
+            if (latest < min) {
+                min = last
+            } 
+        }
+    }
+    console.log(last)
+</script>
+
+<script type="xxx" id="ch0105/25">
+    var a = +prompt()
+    var b = a.toString(7)
+    var c = a.toString(9)
+    console.log(a,b,c)
 </script>
